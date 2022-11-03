@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri 7</title>
+    <style>
+
+        body{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .container{
+            background-color: antiquewhite;
+            width: 400px;
+            height: auto;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            border-radius: 20px;
+        }
+        p{
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        span{
+            font-weight: 500;
+        }
+        .box1{
+            background-color: aliceblue;
+            height: 100px;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .box2{
+            background-color: aliceblue;
+            margin-top: 20px;
+            height: 100px;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .box3{
+            background-color: aliceblue;
+            margin-top: 20px;
+            height: 100px;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .box4{
+            background-color: aliceblue;
+            margin-top: 20px;
+            height: 100px;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tugas Mandiri 7</h1>
+        <h2>M Tsani Nur Ramdhan</h2>
+        <div class="box1">
+            <span>Array Hewan</span>
+            <p id="tampil"></p>
+        </div>
+        <div class="box2">
+            <span>Menambahkan "Gagak" pada Array Hewan </span>
+            <p id="tampil1"></p>
+        </div>
+        <div class="box3">
+            <span>Mengubah index-2 menjadi "Kucing"</span>
+            <p id="tampil2"></p>
+        </div>
+        <div class="box4">
+            <span>Menghapus index-0</span>
+            <p id="tampil3"></p>
+        </div>  
+    </div>
+</body>
+    <script>
+        
+        let tampil = document.getElementById("tampil")
+        let tampil1 = document.getElementById("tampil1")
+        let tampil2 = document.getElementById("tampil2")
+        let tampil3 = document.getElementById("tampil3")
+
+        let hewan = ["Gajah", " Ikan" , " Harimau"]
+
+        const tambahHewan = () =>{
+            hewan.push(" Gagak")
+            return hewan
+        }
+        
+
+        const ubahNama = () =>{
+            hewan[2]=" Kucing"
+            return hewan
+        }
+
+        const hapusIndex = () =>{
+            hewan.shift()
+            return hewan
+        }
+
+
+        tampil.innerText = hewan
+
+        tampil1.innerText = tambahHewan()
+
+        tampil2.innerText = ubahNama()
+
+        tampil3.innerText = hapusIndex()
+    </script>
+</html>
